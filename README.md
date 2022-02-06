@@ -1,5 +1,4 @@
-# distributed-data-processing-with-python-intro-talk
-Introduction To Distributed Data Processing With Python - Map Reduce, Apache Spark, Structured Streaming
+# Introduction To Distributed Data Processing With Python - Map Reduce, Apache Spark
 
 # Setup and Running The Map Reduce code on Google Cloud
   - Download the yelp dataset from https://www.yelp.com/dataset 
