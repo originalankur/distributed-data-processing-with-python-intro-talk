@@ -127,3 +127,5 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+yelp_academic_dataset_*
+output.txt
