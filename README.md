@@ -21,25 +21,10 @@ Introduction To Distributed Data Processing With Python - Map Reduce, Apache Spa
   - Run the map reduce script 
       `GOOGLE_APPLICATION_CREDENTIALS=~/.dataproc/importdart-e111a7baa3ce.json python map_reduce_dataproc.py -r dataproc  yelp_academic_dataset_business.json > output.txt`
 
-# Concepts to cover
-  - What is Map-Reduce?.
-  - What's Hadoop?.
-  - Problems with Hadoop
-  - What is Apache Spark?. 
-    - High level Architecture 
-    - How does it overcome the Hadoop problem and relationship with Hadoop
-
-# Code 
-## get a dataset for yelp dataset 
-  - json -> csv individual files each in respective type folder ( review, users etc )
-  
-## write a map reduce multi-step script
-## apache spark
-   - Read entire JSON in memory
-   - RDD for computing the ans
-   - SQL for computing the ans
-## real time distributed data processing architecture ??? Not sure if I can cover this in the same hr
-
-  - stream json to redis streams or kafka or socket
-    - one topic for every type
-    - windowing / append to df directly
+# Installing Apache Spark + Jypter Notebook for local development via Docker
+  - `docker pull jupyter/pyspark-notebook`
+  - `docker run -it -p 8888:8888 -v `(pwd)`:/home/jovyan/work/projects/ jupyter/pyspark-notebook`
+  - Click the hyperlink that shows after running the above docker image 
+    ``` [I 2022-02-06 21:37:44.610 ServerApp] Jupyter Server 1.13.5 is running at:
+        [I 2022-02-06 21:37:44.610 ServerApp]  or http://127.0.0.1:8888/lab?token=5fd2e5e9849c10b88faeb4a0def592fa6dd07bf7a18c9051
+    ```
